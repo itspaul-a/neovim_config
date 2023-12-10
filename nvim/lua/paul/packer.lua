@@ -1,3 +1,13 @@
+
+                          __ _                              ____ _       
+    ____   ____ _ __  __ / /( )_____   _____ ____   ____   / __/(_)____ _
+   / __ \ / __ `// / / // / |// ___/  / ___// __ \ / __ \ / /_ / // __ `/
+  / /_/ // /_/ // /_/ // /   (__  )  / /__ / /_/ // / / // __// // /_/ / 
+ / .___/ \__,_/ \__,_//_/   /____/   \___/ \____//_/ /_//_/  /_/ \__, /  
+/_/                                                             /____/   
+
+
+
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
@@ -16,17 +26,17 @@ return require('packer').startup(function(use)
   use 'm4xshen/autoclose.nvim'
   -- theme
   use { "ellisonleao/gruvbox.nvim" }
+  use { "theprimeagen/harpoon"}
   use( 'hrsh7th/nvim-cmp')
   use( 'hrsh7th/cmp-nvim-lsp')
   use( 'L3MON4D3/LuaSnip')
   use( 'saadparwaiz1/cmp_luasnip')
+  use( "mbbill/undotree")
+  use( "tpope/vim-fugitive")
   use( 'rafamadriz/friendly-snippets')
   use( 'mattn/emmet-vim')
   -- treesitter
-  use {
-	  'nvim-treesitter/nvim-treesitter',
-	  run = ':TSUpdate'
-  }
+  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use( 'vimwiki/vimwiki')
   use {
 	'williamboman/mason.nvim',

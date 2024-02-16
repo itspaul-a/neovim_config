@@ -1,13 +1,3 @@
-
-                          __ _                              ____ _       
-    ____   ____ _ __  __ / /( )_____   _____ ____   ____   / __/(_)____ _
-   / __ \ / __ `// / / // / |// ___/  / ___// __ \ / __ \ / /_ / // __ `/
-  / /_/ // /_/ // /_/ // /   (__  )  / /__ / /_/ // / / // __// // /_/ / 
- / .___/ \__,_/ \__,_//_/   /____/   \___/ \____//_/ /_//_/  /_/ \__, /  
-/_/                                                             /____/   
-
-
-
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
@@ -16,6 +6,8 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+  use 'lervag/vimtex'
+  use 'mg979/vim-visual-multi'
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	  -- or                            , branch = '0.1.x',

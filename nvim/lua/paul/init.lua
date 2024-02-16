@@ -26,4 +26,4 @@ vim.opt.updatetime = 50
 vim.g.mapleader = " "
 
 
-
+vim.g['livepreview_previewer'] = 'zathura'
